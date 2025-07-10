@@ -1,6 +1,6 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule, NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
 import { NouisliderModule } from 'ng2-nouislider';
 import { JwBootstrapSwitchNg2Module } from 'jw-bootstrap-switch-ng2';
@@ -20,6 +20,7 @@ import { NgbdModalContent } from './modal/modal.component';
         CommonModule,
         FormsModule,
         NgbModule,
+        NgbNavModule,
         NouisliderModule,
         RouterModule,
         JwBootstrapSwitchNg2Module
@@ -35,6 +36,7 @@ import { NgbdModalContent } from './modal/modal.component';
         NgbdModalContent
     ],
     entryComponents: [NgbdModalContent],
-    exports:[ ComponentsComponent ]
+    exports:[ ComponentsComponent ],
+    schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class ComponentsModule { }

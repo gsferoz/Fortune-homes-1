@@ -8,6 +8,7 @@ import { ProfileComponent } from './examples/profile/profile.component';
 import { SignupComponent } from './examples/signup/signup.component';
 import { LandingComponent } from './examples/landing/landing.component';
 import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.component';
+import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
 
 const routes: Routes =[
     { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -22,6 +23,7 @@ const routes: Routes =[
   imports: [
     CommonModule,
     BrowserModule,
+    NgbNavModule,
     RouterModule.forRoot(routes,{
       useHash: true
     })
