@@ -12,10 +12,10 @@ import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
 
 const routes: Routes =[
     { path: '', redirectTo: 'home', pathMatch: 'full' },
-    { path: 'home',             component: ComponentsComponent },
+    { path: 'landing',             component: ComponentsComponent },
     { path: 'user-profile',     component: ProfileComponent },
     { path: 'signup',           component: SignupComponent },
-    { path: 'landing',          component: LandingComponent },
+    { path: 'home',          component: LandingComponent },
     { path: 'nucleoicons',      component: NucleoiconsComponent }
 ];
 

@@ -12,7 +12,8 @@ import { SignupComponent } from './signup/signup.component';
         CommonModule,
         FormsModule,
         NgbModule,
-        NgbNavModule
+        NgbNavModule,
+        FormsModule
     ],
     declarations: [
         LandingComponent,

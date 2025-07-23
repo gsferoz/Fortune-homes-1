@@ -1,0 +1,25 @@
+.fortune-logo {
+    height: 120px;
+}
+
+.fortune-logo-alt {
+    height: 120px;
+}
+
+:not(.navbar-transparent) .fortune-logo {
+    display: none;
+}
+
+.navbar-transparent .fortune-logo {
+    display: block;
+}
+
+.navbar-transparent .fortune-logo-alt {
+    display: none;
+}
+
+.nav-item {
+    .menu {
+        cursor: pointer;
+    }
+}
